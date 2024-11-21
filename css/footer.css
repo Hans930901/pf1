@@ -105,7 +105,7 @@ footer .wrap .sns li > a {
   background-repeat: no-repeat;
 }
 footer .wrap .sns li:nth-child(2) a{  
-  background-position-x: calc(-187px / 2);
+  background-position-x: calc(-186px / 2);
 }
 footer .wrap .sns li:nth-child(3) a{  
   background-position-x: calc(-270px / 2);

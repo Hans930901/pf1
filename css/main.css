@@ -3,7 +3,7 @@ main{
 }
 #summary {  
   height: 100vh;
-  background: radial-gradient(circle, rgb(219, 42, 42) 0%, rgb(246, 115, 115) 35%, rgb(255, 255, 255) 100%);
+  background: url(https://company.ybtour.co.kr/images/bg/bg_main_2.jpg);
 }
 #summary div.wrap{
   height: 100%;
@@ -17,6 +17,7 @@ main{
 }
 #summary p.p1 {  
   font-weight: 400;
+  color: white;
 }
 #summary ul {  
   position: absolute;
@@ -28,8 +29,8 @@ main{
   height: 30%;
   align-items: center;
 }
-#summary ul li {
-  
+#summary ul li {  
+  color: white;
 }
 #summary ul li h3 {  
 }
@@ -72,7 +73,7 @@ main{
   content: "";
   display: inline-block;
   width: 90%;
-  height: 300px;
+  height: 440px;
   background-image: url(https://company.ybtour.co.kr/images/bg/bg_story_1.jpg);
   background-position: center;
   background-size: cover;
@@ -93,16 +94,24 @@ main{
 }
 #vision div.wrap ul li:nth-child(even)::before{  
   grid-column: 2;
+  justify-self: end;
+}
+#vision div.wrap ul li:nth-child(2)::before{
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_story_2.jpg);
+}
+#vision div.wrap ul li:nth-child(3)::before{
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_story_3.jpg)
+}
+#vision div.wrap ul li:nth-child(4)::before{
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_story_4.jpg)
 }
 #vision div.wrap ul li:nth-child(even) h4{  
   grid-column: 1;
   justify-self: end;
-  margin-right: 10%;
 }
 #vision div.wrap ul li:nth-child(even) p{  
   grid-column: 1;
   justify-self: end;
-  margin-right: 10%;
 }
 /* 여행 */
 #travel {  
@@ -184,7 +193,7 @@ main{
 }
 /* 소식 */
 #news {  
-  height: auto;
+  min-height: 450px;
 }
 #news .wrap {  
   display: grid;
@@ -199,20 +208,20 @@ main{
   grid-column: 1;
   grid-row: 1;
 }
-#news .wrap .smT {  
+#news .wrap > a {  
   grid-column: 1;
   grid-row: 2;
   transition: 1s;
 }
-#news .wrap .smT:hover{  
+#news .wrap > a:hover{  
   color: gray;
 }
-#news .wrap .smT::after {
+#news .wrap > a::after {
   content:" > ";
   display: inline-block;
   transition: 1s;
 }
-#news .wrap .smT:hover::after{  
+#news .wrap > a:hover::after{  
   transform: translateX(5px);
 }
 #news .wrap ul {
@@ -231,8 +240,10 @@ main{
   line-height: 4;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
   align-items: center;
+}
+#news .wrap ul li a p{
+  line-height: 4;
 }
 #news .wrap ul li a time {
   
